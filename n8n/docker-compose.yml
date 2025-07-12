@@ -27,6 +27,8 @@ services:
       - "5678"
     stdin_open: true
     tty: true
+    depends_on:
+      - n8n
 
 volumes:
   n8n_data:
