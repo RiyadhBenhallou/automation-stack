@@ -10,7 +10,7 @@ services:
       - N8N_PORT=5678
       - N8N_PROTOCOL=https
       - WEBHOOK_URL=https://${NGROK_STATIC_DOMAIN}
-      - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
+      - GENERIC_TIMEZONE=Europe/Berlin
     volumes:
       - n8n_data:/home/node/.n8n
       - ./local-files:/files
